@@ -5,11 +5,12 @@ describe('Person', () =>{
   let person;
 
   beforeEach(() => {
-    person = new Person(10);
+    person = new Person(10, 100);
   });
 
-  test('it will take in a persons age', () => {
+  test('it will take in a persons age and life expectancy', () => {
     expect(person.age).toEqual(10);
+    expect(person.lifeExp).toEqual(100);
   })
 
   test('it will return a persons age in Mercury years.', () => {

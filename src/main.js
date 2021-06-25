@@ -6,5 +6,6 @@ import './css/styles.css';
 
 $('#galacticSubmit').click(function (){
   const userAge = $('#age').val();
-  const person = new Person(age);
+  const userExp = $('#lifeExp').val();
+  const person = new Person(age, lifeExp);
 })

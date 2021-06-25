@@ -1,6 +1,7 @@
 export default class  Person {
-  constructor(age) {
+  constructor(age,lifeExp) {
     this.age = age;
+    this.lifeExp = lifeExp;
   }
   mercuryAge() {
     let merYears = Math.ceil(365 * .24)
