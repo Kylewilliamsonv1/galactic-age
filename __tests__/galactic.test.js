@@ -25,4 +25,7 @@ describe('Person', () =>{
   test('it will tell the user if they have surpased their expected years to live and return how many years past the have lived past.', ()=>{
     expect(person.lifeCondition()).toEqual();
   });
+  test('it will return a users age, life expectancy, and remaining years in an array.', ()=>{
+    expect(person.checkStats()).toEqual([[10, 100, 90], [42, 415, 373], [17, 161, 144], [6, 54, 48], [1, 9, 8]]);
+  })
 });

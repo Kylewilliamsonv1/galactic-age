@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
 $('#galacticSubmit').click(function (){
-  const userAge = $('#age').val();
-  const userExp = $('#lifeExp').val();
-  const person = new Person(age, lifeExp);
+  const age = $('#age').val();
+  const lifeExp = $('#lifeExp').val();
+  const newPerson = new Person(age, lifeExp);
+  $("#output").html(newPerson.checkStats());
 })
