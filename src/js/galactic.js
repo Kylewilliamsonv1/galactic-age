@@ -82,9 +82,9 @@ export default class  Person {
     return remYearsEarth
   }
   personRemYearsMercury () {
-    let merAge = this.ageCal([1])
-    let merLExp = this.lifeExpCal([1])
-    let remYearsMercury = merAge - merLExp;
+    let merAge = this.ageCal()
+    let merLExp = this.lifeExpCal()
+    let remYearsMercury = merLExp[1] - merAge[1];
     return remYearsMercury
   }
   personRemYearsVenus() {
