@@ -24,6 +24,10 @@ describe('Person', () =>{
     expect(person.marsAge()).toEqual(6)
   })
 
+  test('it will return a persons age in Jupiter years', ()=> {
+    expect(person.jupiterAge()).toEqual(1)
+  })
+
 
 
 })

@@ -20,4 +20,10 @@ export default class  Person {
     let personMarsAge = Math.ceil(person * 365/marsYears);
     return personMarsAge
   }
+  jupiterAge() {
+    let jupYears = Math.ceil(365 * 11.86)
+    let person = [this.age];
+    let personJupAge = Math.ceil(person * 365/jupYears);
+    return personJupAge
+  }
 }
