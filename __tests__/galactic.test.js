@@ -16,6 +16,14 @@ describe('Person', () =>{
     expect(person.mercuryAge()).toEqual(42)
   })
 
+  test('it will return a persons age in Venus years', ()=> {
+    expect(person.venusAge()).toEqual(17)
+  })
+
+  test('it will return a persons age in Mars years', ()=> {
+    expect(person.marsAge()).toEqual(6)
+  })
+
 
 
 })
