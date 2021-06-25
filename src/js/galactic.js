@@ -55,8 +55,8 @@ export default class  Person {
     let remYearsEarth = this.lifeExp - this.age;
     return remYearsEarth
   }
-  // personRemYears () {
-  //   let remYearsMercury = this.mercuryExp() - this.mercuryAge();
-  //   return remYearsMercury
-  // }
+  personRemYearsMercury () {
+    let remYearsMercury = this.mercuryExp() - this.mercuryAge();
+    return remYearsMercury
+  }
 }
