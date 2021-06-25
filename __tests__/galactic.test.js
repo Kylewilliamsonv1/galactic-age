@@ -12,7 +12,9 @@ describe('Person', () =>{
     expect(person.age).toEqual(10);
   })
 
-
+  test('it will return a persons age in Mercury years.', () => {
+    expect(person.mercuryAge()).toEqual(42)
+  })
 
 
 
