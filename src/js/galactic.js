@@ -33,4 +33,11 @@ export default class  Person {
     let merLifeExp = Math.ceil(lifeExp * 365/merYears);
     return merLifeExp
   }
+  venusExp() {
+    let lifeExp = this.lifeExp;
+    let venYears = Math.ceil(365 * .62)
+    let venLifeExp = Math.ceil(lifeExp * 365/venYears);
+    return venLifeExp
+  }
+
 }

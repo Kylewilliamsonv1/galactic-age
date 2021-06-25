@@ -31,4 +31,7 @@ describe('Person', () =>{
   test('it will return a persons life expectancy in Mercury years.', () => {
     expect(person.mercuryExp()).toEqual(415)
   })
+  test('it will return a persons life expectancy in Venus years.', () => {
+    expect(person.venusExp()).toEqual(161)
+  })
 })
