@@ -82,14 +82,27 @@ export default class  Person {
     return remYearsEarth
   }
   personRemYearsMercury () {
-    let merAge = this.ageCal()
-    let merLExp = this.lifeExpCal()
-    let remYearsMercury = merLExp[1] - merAge[1];
+    let personAge = this.ageCal()
+    let lifeExp = this.lifeExpCal()
+    let remYearsMercury = lifeExp[1] - personAge[1];
     return remYearsMercury
   }
-  personRemYearsVenus() {
-    let remYearsVenus = this.venusExp() - this.venusAge();
+  personRemYearsVenus () {
+    let personAge = this.ageCal()
+    let lifeExp = this.lifeExpCal()
+    let remYearsVenus = lifeExp[2] - personAge[2];
     return remYearsVenus
   }
-
+  personRemYearsMars () {
+    let personAge = this.ageCal()
+    let lifeExp = this.lifeExpCal()
+    let remYearsMars = lifeExp[3] - personAge[3];
+    return remYearsMars
+  }
+  personRemYearsJupiter () {
+    let personAge = this.ageCal()
+    let lifeExp = this.lifeExpCal()
+    let remYearsJupiter = lifeExp[4] - personAge[4];
+    return remYearsJupiter
+  }
 }

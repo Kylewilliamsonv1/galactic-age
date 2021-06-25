@@ -55,7 +55,10 @@ describe('Person', () =>{
   test('it will tell the user how many years they should expect to live in Venus years', ()=>{
     expect(person.personRemYearsVenus()).toEqual(144);
   });
-  test('it will calculate a persons age by multiple planet years and return an array of ages', ()=>{
-    expect(person.ageCal()).toEqual([10,42,17,6,1])
-  })
+  test('it will tell the user how many years they should expect to live in Mars years', ()=>{
+    expect(person.personRemYearsMars()).toEqual(48);
+  });
+  test('it will tell the user how many years they should expect to live in Jupiter years', ()=>{
+    expect(person.personRemYearsJupiter()).toEqual(8);
+  });
 });
