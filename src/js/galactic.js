@@ -13,7 +13,7 @@ export default class  Person {
     let personVenAge = Math.ceil(person * 365/venYears);
     let personMarsAge = Math.ceil(person * 365/marsYears);
     let personJupAge = Math.ceil(person * 365/jupYears);
-    let planetAgeArray = [person, personMerAge, personVenAge, personMarsAge, personJupAge]
+    let planetAgeArray = [person,personMerAge,personVenAge,personMarsAge,personJupAge]
     return planetAgeArray
   }
   mercuryAge() {
@@ -82,7 +82,9 @@ export default class  Person {
     return remYearsEarth
   }
   personRemYearsMercury () {
-    let remYearsMercury = this.mercuryExp() - this.mercuryAge();
+    let merAge = this.ageCal([1])
+    let merLExp = this.lifeExpCal([1])
+    let remYearsMercury = merAge - merLExp;
     return remYearsMercury
   }
   personRemYearsVenus() {
