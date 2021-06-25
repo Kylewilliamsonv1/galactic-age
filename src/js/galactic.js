@@ -3,15 +3,19 @@ export default class  Person {
     this.age = age;
     this.lifeExp = lifeExp;
   }
-  // ageCal() {
-  //   let person = this.age 
-  //   let personMerAge = Math.ceil(person * 365/merYears);
-  //   let personVenAge = Math.ceil(person * 365/venYears);
-  //   let personMarsAge = Math.ceil(person * 365/marsYears);
-  //   let personJupAge = Math.ceil(person * 365/jupYears);
-  //   let planetAgeArray = [person, personMerAge, personVenAge, personMarsAge, personJupAge]
-  //   return planetAgeArray
-  // }
+  ageCal() {
+    let person = this.age
+    let merYears = Math.ceil(365 * .24)
+    let venYears = Math.ceil(365 * .62)
+    let marsYears = Math.ceil(365 * 1.88)
+    let jupYears = Math.ceil(365 * 11.86) 
+    let personMerAge = Math.ceil(person * 365/merYears);
+    let personVenAge = Math.ceil(person * 365/venYears);
+    let personMarsAge = Math.ceil(person * 365/marsYears);
+    let personJupAge = Math.ceil(person * 365/jupYears);
+    let planetAgeArray = [person, personMerAge, personVenAge, personMarsAge, personJupAge]
+    return planetAgeArray
+  }
   mercuryAge() {
     let merYears = Math.ceil(365 * .24)
     let person = this.age;
@@ -36,7 +40,16 @@ export default class  Person {
     let personJupAge = Math.ceil(person * 365/jupYears);
     return personJupAge
   }
-
+  lifeExpCal() {
+    let lifeExp = this.lifeExp;
+    let expYearsArray = this.ageCal()
+    let merLifeExp = Math.ceil(lifeExp * 365/merYears);
+    let venLifeExp = Math.ceil(lifeExp * 365/venYears);
+    let marsLifeExp = Math.ceil(lifeExp * 365/marsYears);
+    let jupLifeExp = Math.ceil(lifeExp * 365/jupYears);
+    let planetLExpArray = [lifeExp,merLifeExp,venLifeExp,marsLifeExp,jupLifeExp]
+    return planetLExpArray
+  }
   mercuryExp() {
     let lifeExp = this.lifeExp;
     let merYears = Math.ceil(365 * .24)

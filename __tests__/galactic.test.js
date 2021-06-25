@@ -28,6 +28,9 @@ describe('Person', () =>{
   test('it will return a persons age in Jupiter years', ()=> {
     expect(person.jupiterAge()).toEqual(1);
   });
+  test('it will calculate a persons age by multiple planet years and return an array of ages', ()=>{
+    expect(person.ageCal()).toEqual([10,42,17,6,1])
+  })
   test('it will return a persons life expectancy in Mercury years.', () => {
     expect(person.mercuryExp()).toEqual(415);
   });
@@ -40,6 +43,9 @@ describe('Person', () =>{
   test('it will return a persons life expectancy in Jupiter years.', () => {
     expect(person.jupExp()).toEqual(9);
   });
+  test('it will calculate a persons life expectancy by multple planet years and return an array of life expectancies.', ()=>{
+    expect(person.lifeExpCal()).toEqual([100,415,161,54,9])
+  })
   test('it will tell the user how many years they should expect to live in Earth years', ()=>{
     expect(person.personRemYearsEarth()).toEqual(90);
   });
@@ -49,7 +55,7 @@ describe('Person', () =>{
   test('it will tell the user how many years they should expect to live in Venus years', ()=>{
     expect(person.personRemYearsVenus()).toEqual(144);
   });
-  // test('it will calculate a persons age by planet years and return an array of ages', ()=>{
-  //   expect(person.ageCal()).toEqual([10,42,17,6,1])
-  // })
+  test('it will calculate a persons age by multiple planet years and return an array of ages', ()=>{
+    expect(person.ageCal()).toEqual([10,42,17,6,1])
+  })
 });
