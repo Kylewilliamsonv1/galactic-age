@@ -27,5 +27,5 @@ describe('Person', () =>{
   });
   test('it will return a users age, life expectancy, and remaining years in an array.', ()=>{
     expect(person.checkStats()).toEqual([[10, 100, 90], [42, 415, 373], [17, 161, 144], [6, 54, 48], [1, 9, 8]]);
-  })
+  });
 });
