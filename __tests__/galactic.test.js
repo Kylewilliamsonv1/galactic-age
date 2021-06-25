@@ -34,7 +34,13 @@ describe('Person', () =>{
   test('it will return a persons life expectancy in Venus years.', () => {
     expect(person.venusExp()).toEqual(161);
   });
-  test('it will return a persons life expectancy in Venus years.', () => {
-    expect(person.marsExp()).toEqual(54)
+  test('it will return a persons life expectancy in Mars years.', () => {
+    expect(person.marsExp()).toEqual(54);
+  });
+  test('it will return a persons life expectancy in Jupiter years.', () => {
+    expect(person.jupExp()).toEqual(9);
+  });
+  test('it will tell the user how many years they should expect to live.', ()=>{
+    expect(person.personRemYearsEarth()).toEqual(90);
   });
 });

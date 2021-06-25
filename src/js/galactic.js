@@ -45,5 +45,18 @@ export default class  Person {
     let marsLifeExp = Math.ceil(lifeExp * 365/marsYears);
     return marsLifeExp
   }
-
+  jupExp() {
+    let lifeExp = this.lifeExp;
+    let jupYears = Math.ceil(365 * 11.86)
+    let jupLifeExp = Math.ceil(lifeExp * 365/jupYears);
+    return jupLifeExp
+  }
+  personRemYearsEarth () {
+    let remYearsEarth = this.lifeExp - this.age;
+    return remYearsEarth
+  }
+  // personRemYears () {
+  //   let remYearsMercury = this.mercuryExp() - this.mercuryAge();
+  //   return remYearsMercury
+  // }
 }
