@@ -8,7 +8,7 @@ describe('Person', () =>{
     person = new Person(10, 100);
   });
 
-  test('it will take in a persons age and life expectancy', () => {
+  test('it will take in a persons inputted age and life expectancy', () => {
     expect(person.age).toEqual(10);
     expect(person.lifeExp).toEqual(100);
   })
@@ -28,7 +28,7 @@ describe('Person', () =>{
   test('it will return a persons age in Jupiter years', ()=> {
     expect(person.jupiterAge()).toEqual(1)
   })
-
-
-
+  test('it will return a persons life expectancy in Mercury years.', () => {
+    expect(person.mercuryExp()).toEqual(415)
+  })
 })
