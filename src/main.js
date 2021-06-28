@@ -1,4 +1,4 @@
-import Person from './galactic.js';
+import Person from './js/galactic.js';
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
