@@ -20,11 +20,11 @@ export default class Person {
     let lifeExp = this.lifeExp;
     let merYears = Math.ceil(365 * .24);
     let merLifeExp = Math.ceil(lifeExp * 365 / merYears);
-    let venYears = Math.ceil(365 * .62)
+    let venYears = Math.ceil(365 * .62);
     let venLifeExp = Math.ceil(lifeExp * 365 / venYears);
-    let marsYears = Math.ceil(365 * 1.88)
+    let marsYears = Math.ceil(365 * 1.88);
     let marsLifeExp = Math.ceil(lifeExp * 365 / marsYears);
-    let jupYears = Math.ceil(365 * 11.86)
+    let jupYears = Math.ceil(365 * 11.86);
     let jupLifeExp = Math.ceil(lifeExp * 365 / jupYears);
     let planetLExpArray = [lifeExp, merLifeExp, venLifeExp, marsLifeExp, jupLifeExp];
     return planetLExpArray;
