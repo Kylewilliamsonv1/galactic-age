@@ -1,4 +1,3 @@
-import { TestScheduler } from 'jest-cli';
 import Person from './../src/js/galactic.js';
 
 describe('Person', () =>{
