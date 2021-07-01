@@ -22,8 +22,8 @@ _This application will take in a user's age and expected life expectancy and cal
 
 ## Known Bugs
 
-* __
-* __
+* _the UI is not built yet.  newPerson variable on the main.js file is not used yet and is throwing an error_
+
 
 ## License
 
