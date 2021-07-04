@@ -4,6 +4,10 @@
 
 ## Technologies Used
 
+* _Webpack_
+* _Jest_
+* _Eslint_
+* _Babel_
 * _Javascript_
 * _Bootstrap_
 * _jQuery_

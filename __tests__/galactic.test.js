@@ -7,7 +7,7 @@ describe('Person', () =>{
     person = new Person(10, 100);
   });
 
-  test('it will take in a persons inputted age and life expectancy', () => {
+  test('it will create a person object with inputted age and life expectancy', () => {
     expect(person.age).toEqual(10);
     expect(person.lifeExp).toEqual(100);
   });

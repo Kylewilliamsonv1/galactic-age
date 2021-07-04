@@ -1,7 +1,6 @@
 export default class Person {
   constructor(age, lifeExp) {
-    this.age = age;
-    this.lifeExp = lifeExp;
+
   }
   ageCal() {
     let person = this.age;

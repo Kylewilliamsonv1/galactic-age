@@ -8,4 +8,5 @@ $('#galacticSubmit').click(function (){
   const age = $('#age').val();
   const lifeExp = $('#lifeExp').val();
   const newPerson = new Person(age, lifeExp);
+  console.log(newPerson);
 });
