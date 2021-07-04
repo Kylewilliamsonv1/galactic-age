@@ -12,12 +12,11 @@ describe('Person', () =>{
     expect(person.lifeExp).toEqual(100);
   });
   test('it will return an array of year equivelants by planet', ()=>{
-    expect(person.planetCal()).toEqua();
+    expect(person.planetCal()).toEqual([10, 88, 227, 687, 4329]);
   });
-  test('it will tell the user if they have surpased their expected years to live and return how many years past the have lived past.', ()=>{
-    expect(person.lifeCondition()).toEqual();
+  test('it will return an array of remaining years left by planet based on life expectancy', ()=>{
+    expect(person.remYears()).toEqual();
   });
-
 });
 
 
