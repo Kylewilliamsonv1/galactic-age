@@ -7,7 +7,7 @@ describe('Person', () =>{
     person = new Person(10, 100);
   });
 
-  test('it will create a person object with inputted age and life expectancy', () => {
+  test('it will take in a persons inputted age and life expectancy', () => {
     expect(person.age).toEqual(10);
     expect(person.lifeExp).toEqual(100);
   });
@@ -26,5 +26,8 @@ describe('Person', () =>{
   });
   test('it will return a users age, life expectancy, and remaining years in an array.', ()=>{
     expect(person.checkStats()).toEqual([[10, 100, 90], [42, 415, 373], [17, 161, 144], [6, 54, 48], [1, 9, 8]]);
+  });
+  test('it will take in an input and return an array of ages by planet.', ()=>{
+    expect(person.planetCal()).toEqual();
   });
 });
