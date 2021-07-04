@@ -11,11 +11,11 @@ describe('Person', () =>{
     expect(person.age).toEqual(10);
     expect(person.lifeExp).toEqual(100);
   });
-  test('it will return an array of ages by planet', ()=>{
+  test('it will return an array of age equivelants by planet', ()=>{
     expect(person.planetCal()).toEqual([88, 227, 687, 4329]);
   });
   test('it will return an array of remaining years left by planet based on life expectancy', ()=>{
-    expect(person.remYears()).toEqual();
+    expect(person.remYears()).toEqual([374, 145, 48, 8]);
   });
 });
 

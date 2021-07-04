@@ -11,26 +11,25 @@ export default class Person {
     let planetYearArray = [merYears,venYears,marsYears,jupYears];
     return planetYearArray;
   }
-
+  remYears(){
+    let age = this.age;
+    let lifeExp = this.lifeExp;
+    let planetYearArray = this.planetCal();
+    let lifeExpArray = [];
+    let ageArray = [];
+    let remYears = [];
+    planetYearArray.forEach(function(element) {
+      lifeExpArray.push(lifeExp * 365 / element); 
+    });
+    planetYearArray.forEach(function(element) {
+      ageArray.push(age * 365 / element); 
+    });
+    for(let i = 0; i < lifeExpArray.length; i++) {
+      remYears.push(Math.ceil(lifeExpArray[i]-ageArray[i]));
+    }
+    return remYears;
+  }
 }
-
-// inputResults(){
-//   let age = this.age;
-//   let lifeExp = this.lifeExp;
-//   let planetAge = [];
-//   let planetExp = [];
-//   let remYears = [];
-//   let planetYearArray = this.planetCal();
-//   planetYearArray.forEach(function(element){
-//     planetAge.push(element * age);
-//   });
-//   planetYearArray.forEach(function(element){
-//     planetExp.push(element * lifeExp);
-//   });
-//   for(let i =0; i <planetExp.length; i++) {
-//     remYears.push(Math.abs(planetExp[i] - planetAge[i]));
-//   }
-// }
 
 
 
