@@ -22,12 +22,15 @@ export default class Person {
       lifeExpArray.push(lifeExp * 365 / element); 
     });
     planetYearArray.forEach(function(element) {
-      ageArray.push(age * 365 / element); 
+      ageArray.push(Math.ceil(age * 365 / element)); 
     });
     for(let i = 0; i < lifeExpArray.length; i++) {
       remYears.push(Math.ceil(lifeExpArray[i]-ageArray[i]));
     }
-    return remYears;
+    return {
+      remYears,
+      ageArray,
+    };
   }
 }
 

@@ -15,7 +15,7 @@ describe('Person', () =>{
     expect(person.planetCal()).toEqual([88, 227, 687, 4329]);
   });
   test('it will return an array of remaining years left by planet based on life expectancy', ()=>{
-    expect(person.remYears()).toEqual([374, 145, 48, 8]);
+    expect(person.remYears()).toEqual({"ageArray": [42, 17, 6, 1], "remYears": [373, 144, 48, 8]});
   });
 });
 
