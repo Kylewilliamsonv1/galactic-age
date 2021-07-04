@@ -11,13 +11,6 @@ describe('Person', () =>{
     expect(person.age).toEqual(10);
     expect(person.lifeExp).toEqual(100);
   });
-  test('it will calculate a persons age by different planet years and return an array of ages', ()=>{
-    expect(person.ageCal()).toEqual([10,42,17,6,1]);
-  });
-  test('it will calculate a persons life expectancy by different planet years and return an array of life expectancies.', ()=>{
-    expect(person.lifeExpCal()).toEqual([100,415,161,54,9]);
-  });
-
   test('it will return an array of remaining years to live from different planets', ()=>{
     expect(person.personRemYears()).toEqual([90,373,144,48,8]);
   });
@@ -27,7 +20,9 @@ describe('Person', () =>{
   test('it will return a users age, life expectancy, and remaining years in an array.', ()=>{
     expect(person.checkStats()).toEqual([[10, 100, 90], [42, 415, 373], [17, 161, 144], [6, 54, 48], [1, 9, 8]]);
   });
-  test('it will take in an input and return an array of ages by planet.', ()=>{
-    expect(person.planetCal()).toEqual();
+  test('it will return an array of ages and life expectancies by planet.', ()=>{
+    expect(person.planetCal()).toEqual({"planetAge": [880, 2270, 6870, 43290], "planetExp": [8800, 22700, 68700, 432900]});
   });
 });
+
+
