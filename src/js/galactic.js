@@ -33,17 +33,13 @@ export default class Person {
       lifeExpArray,
     };
   }
-  // lifeCond(){
-  //   let userLifeCond = this.remYears();
-  //   let lifeExp = this.lifeExp;
-  //     if(userLifeCond.remYears > )
-
-    
-  // }
-
+  lifeCond(){
+    let age = this.age;
+    let lifeExp = this.lifeExp;
+    if(age > lifeExp) {
+      return age - lifeExp;
+    } 
+  }
 }
-
-
-
 
 
