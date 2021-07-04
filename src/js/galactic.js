@@ -32,6 +32,7 @@ export default class Person {
       ageArray,
     };
   }
+  
 }
 
 
