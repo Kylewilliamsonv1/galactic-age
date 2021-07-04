@@ -19,7 +19,7 @@ export default class Person {
     let ageArray = [];
     let remYears = [];
     planetYearArray.forEach(function(element) {
-      lifeExpArray.push(lifeExp * 365 / element); 
+      lifeExpArray.push(Math.ceil(lifeExp * 365 / element)); 
     });
     planetYearArray.forEach(function(element) {
       ageArray.push(Math.ceil(age * 365 / element)); 
@@ -30,9 +30,17 @@ export default class Person {
     return {
       remYears,
       ageArray,
+      lifeExpArray,
     };
   }
-  
+  // lifeCond(){
+  //   let userLifeCond = this.remYears();
+  //   let lifeExp = this.lifeExp;
+  //     if(userLifeCond.remYears > )
+
+    
+  // }
+
 }
 
 
