@@ -4,15 +4,14 @@ export default class Person {
     this.lifeExp = lifeExp;
   }
   planetCal(){
-    let age = this.age;
     let merYears = Math.ceil(365 * .24);
     let venYears = Math.ceil(365 * .62);
     let marsYears = Math.ceil(365 * 1.88);
     let jupYears = Math.ceil(365 * 11.86);
-    let planetYearArray = [age,merYears,venYears,marsYears,jupYears];
+    let planetYearArray = [merYears,venYears,marsYears,jupYears];
     return planetYearArray;
   }
-  
+
 }
 
 // inputResults(){
@@ -32,3 +31,8 @@ export default class Person {
 //     remYears.push(Math.abs(planetExp[i] - planetAge[i]));
 //   }
 // }
+
+
+
+
+
