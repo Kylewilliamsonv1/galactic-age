@@ -22,8 +22,11 @@ _This application will take in a user's age and expected life expectancy and cal
 * _Clone repo galactic-age off GitHub_
 * _Open galactic-age file using terminal_
 * _launch code editor_
-* _run npm start in the terminal_
+* _run npm install_
+* _run npm run build_
+* _run npm test_
 
+_To set up this program the user will need to clone the repository to their desktop and then open it up with a code editor.  Once opened the user will then need to run npm install in the terminal to install the dependencies listed in the .json file.  The user will then run npm run build to bundle the application.  Once the file has been bundled the user will run npm test to run the  testing environment.
 ## Known Bugs
 
 * _the UI is not built yet.  newPerson variable on the main.js file is not used yet and is throwing an error_
